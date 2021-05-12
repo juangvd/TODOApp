@@ -1,0 +1,80 @@
+body{
+    padding-left: 0px !important;
+}
+
+header{
+    text-align: center;
+    background: rgb(94, 101, 245);
+    background: linear-gradient(0deg, rgb(80, 88, 235) 26%, rgb(49, 58, 219) 59%, rgb(33, 18, 238) 100%);
+    color: rgb(255, 254, 254) !important;
+    z-index: 100;
+    left: 0px !important; 
+}
+
+header h1{
+    font-size: xx-large !important;
+}
+
+.nueva-tarea{
+    width: 100%;
+    left: 0px;
+    height: 10em;
+    overflow-y: scroll;
+    position: relative;
+    border-style: solid;
+    border-width: thin;
+}
+
+.btn-agregar{
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 10px;
+    border-style: solid;
+    border-width: thin;
+    background-color: rgb(255, 72, 0);
+    color: white;
+}
+
+.btn-agregar img{
+    height: 1em;
+    border-radius: 100%;
+}
+
+
+.containner-checks{
+    border-style: solid;
+    border-width: thin;
+    overflow-y: scroll;
+    height: 214px;
+}
+
+.item-check{
+    display: flex;
+    background: rgb(94, 101, 245);
+    background: linear-gradient(0deg, rgb(80, 88, 235) 26%, rgb(49, 58, 219) 59%, rgb(33, 18, 238) 100%);
+    height: 3em;
+    margin-bottom: 5px;
+}
+
+.item-check input,
+.item-check label{
+    display: inline-flex;
+    padding: 0px;
+
+}
+
+.item-check input{
+    height: 3em;
+    width: 1.5em;
+}
+
+.item-check label{
+    color: rgb(255, 254, 254);
+    align-items: center;
+    width: 79%;
+}
+
+.img-exclamacion{
+    border-radius: 100%;
+    width: 40px;
+}

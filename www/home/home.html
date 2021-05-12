@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!--
+Customize this policy to fit your own app's needs. For more guidance, see:
+https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+Some notes:
+* gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+* https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+* Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+* Enable inline JS: add 'unsafe-inline' to default-src
+* To allow everything (for testing only, please): content="default-src * 'unsafe-inline' 'unsafe-eval'"
+-->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"
+    />
+    <link rel="stylesheet" type="text/css" href="../inc/Aerophane.css" />
+    <link rel="stylesheet" type="text/css" href="../inc/main.css" />
+
+    <title>Aerophane - Home</title>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    
+    <body>
+      <header>
+        <h1>Todo App</h1>
+      </header>
+
+      <div> 
+            <textarea id="txt-tarea" class="nueva-tarea">
+
+            </textarea>
+            <button id="btn-agregar" class="btn-agregar"><img src="../assets/tuerca.png"></img>Agregar</button>
+            <div id="lst-tareas" class="containner-checks">
+                
+            </div>
+      </div>
+
+      <div class="dialog">
+        <h2>Dialog</h2>
+        <p id="p-mensaje">
+          
+        </p>
+        
+      </div>
+
+      <script type="text/javascript" src="../cordova.js"></script>
+      <script type="text/javascript" src="../inc/Aerophane.js"></script>
+      <script type="text/javascript" src="../inc/main.js"></script>
+      <script type="text/javascript" src="home.js"></script>
+    </body>
+  </head>
+</html>
